@@ -22,7 +22,7 @@ public class LoginPage {
     private WebElement submitBtn;
 
     @FindBy(xpath = "//div[contains(@class, 'error')]")
-    private WebElement error;
+    private WebElement loginError;
 
     public LoginPage(WebDriver webDriver){
         this.driver = webDriver;
@@ -45,6 +45,6 @@ public class LoginPage {
     }
 
     public WebElement getError() {
-        return error;
+        return loginError;
     }
 }
